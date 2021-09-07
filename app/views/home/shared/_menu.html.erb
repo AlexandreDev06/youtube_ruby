@@ -1,0 +1,97 @@
+<nav class="navbar text-light yt">
+  <div>
+    <button type="button" class="btn bg-transparent border-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <i class="bi bi-justify text-light"></i>
+    </button>
+    <%= link_to home_index_path do %>
+      <%= image_tag "logo_yt.png" %>
+    <% end %>
+  </div>
+  <div class="col-5">
+    <div class="input-group ">
+      <input type="text" class="form-control bg-dark border-dark" placeholder="Pesquisar">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary bg-dark border border-dark" type="button">
+          <i class="bi bi-search"></i></button>
+        <i class="bi bi-mic-fill text-light icones ms-3"></i>
+      </div>
+    </div>
+  </div>
+  <div>
+    <!--<a class="text-light" href="#"><i class="bi bi-camera-video icones ms-1"></i></a> aqui vai o botao para cadastrar videos-->
+    <%= link_to videos_index_path do %>
+      <i class="bi bi-camera-video icones ms-1"></i>
+    <% end %>
+    <a class="text-light" href="#"><i class="bi bi-grid icones ms-1"></i></a>
+    <a class="text-light" href="#"><i class="bi bi-bell icones ms-1"></i></a>
+    <a class="text-light" href="#"><i class="bi bi-person-circle icones ms-4 me-2"></i></a>
+  </div>
+</nav>
+<!--SIDE BAR BOOTSTRAP -->
+<div class="modal animate__animated animate__fadeInLeft animate__faster" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen bg-dark">
+    <div class="modal-content">
+      <div class="m-3">
+        <button type="button" class="btn me-3" data-bs-dismiss="modal">
+          <i class="bi bi-justify text-light"></i>
+        </button>
+        <%= image_tag "logo_yt.png" %>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-house mr-3"></span> Inicio</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-bullseye mr-3"></span> Explorar</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-youtube mr-3"></span> Inscrições</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-book-half mr-3"></span> Biblioteca</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-clock-history mr-3"></span> Historico</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-film mr-3"></span> Filmes</a>
+          </li>
+          <li class="list-group-item border-bottom">
+            <label class="text-light ml-5 mais_yt">Mais do youtube</label>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-youtube mr-3"></span> Youtube Premium</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-film mr-3"></span> Filmes</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-controller mr-3"></span> Jogos</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-wifi mr-3"></span> Ao Vivo</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-book mr-3"></span> Aprender</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-globe mr-3"></span> Esportes</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-gear mr-3"></span> Configurações</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-flag mr-1"></span> Histórico de denúncias</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-question-lg mr-3"></span> Ajuda</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#"><span class="bi bi-chat-right mr-3"></span> Enviar Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require bootstrap
+ *= require_tree .
+ *= require_self
+ */
+
+.yt {
+  background-color: #202020;
+  color: #ffffff;
+}
+
+body {
+  color: #fff;
+}
+
+input {
+  background-color: #202020;
+  color: #202020;
+}
+
+.icones {
+  font-size: 22px;
+}
+
+#sidebarCollapse {
+  border-radius: 100px;
+}
+
+.bi-justify {
+  font-size: 20px;
+}
+
+.borda-bottom {
+  border-bottom-color: #fff;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #094CFA;
+}
+
+.mais_yt {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+li {
+  border-bottom: none;
+}
+
+.img-cards {
+  height: 200px;
+}
+
+.img-icon {
+  border-radius: 70px;
+  width: 50px;
+  height: 50px;
+}
+
+.tilte-video {
+  font-size: 18px;
+}
+
+.card-videos {
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/*SIDEBAR CSS*/
+
+.modal {
+  width: 300px;
+}
+
+.modal-content {
+  width: 300px;
+  background-color: #202020;
+}
+
+.list-group-item {
+  background-color: #202020;
+  color: #ffffff;
+  border: 0px;
+}
+
+.list-group-item:hover {
+  background-color: #69686873;
+}
