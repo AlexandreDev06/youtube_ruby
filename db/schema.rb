@@ -10,19 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_07_011009) do
+ActiveRecord::Schema.define(version: 2021_09_09_162746) do
 
-  create_table "testes", force: :cascade do |t|
-    t.string "nome"
-    t.string "tem_que_ir"
-    t.string "vai_pela_amor"
+  create_table "categories", force: :cascade do |t|
+    t.string "category"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "videos", force: :cascade do |t|
+    t.string "url_video"
+    t.string "thumb"
+    t.string "titulo"
+    t.string "descricao"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "category_id"
+    t.index ["category_id"], name: "index_videos_on_category_id"
   end
 
+  add_foreign_key "videos", "categories"
 end

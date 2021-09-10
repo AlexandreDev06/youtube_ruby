@@ -19,10 +19,12 @@
   </div>
   <div>
     <!--<a class="text-light" href="#"><i class="bi bi-camera-video icones ms-1"></i></a> aqui vai o botao para cadastrar videos-->
-    <%= link_to videos_index_path do %>
+    <%= link_to new_video_path do %>
       <i class="bi bi-camera-video icones ms-1"></i>
     <% end %>
-    <a class="text-light" href="#"><i class="bi bi-grid icones ms-1"></i></a>
+    <%= link_to videos_index_path do %>
+      <i class="bi bi-grid icones ms-1"></i>
+    <% end -%>
     <a class="text-light" href="#"><i class="bi bi-bell icones ms-1"></i></a>
     <a class="text-light" href="#"><i class="bi bi-person-circle icones ms-4 me-2"></i></a>
   </div>
@@ -40,10 +42,14 @@
       <div class="modal-body">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
-            <a href="#"><span class="bi bi-house mr-3"></span> Inicio</a>
+            <%= link_to categories_path do %>
+              <span class="bi bi-house mr-3"></span> Categorias
+            <% end %>
           </li>
           <li class="list-group-item">
-            <a href="#"><span class="bi bi-bullseye mr-3"></span> Explorar</a>
+            <%= link_to new_category_path do %>
+              <span class="bi bi-youtube mr-3"></span> Nova Categoria
+            <% end %>
           </li>
           <li class="list-group-item">
             <a href="#"><span class="bi bi-youtube mr-3"></span> Inscrições</a>

@@ -1,0 +1,11 @@
+<%= form_with model: @category do |f| %>
+  <div class="row ">
+    <div class="col-5 m-3 form-grou">
+      <%= f.label :Categoria %>
+      <%= f.text_field :category, class: "form-control", placeholder: "Cateogoria" %>
+    </div>
+    <div class="col-5 offset-md-5">
+      <%= f.submit :Salvar, class: "btn btn-success mx-auto" %>
+    </div>
+  </div>
+<% end %>

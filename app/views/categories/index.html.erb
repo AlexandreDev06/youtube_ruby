@@ -1,0 +1,28 @@
+<h1>Criando Categorias</h1>
+<div class="container">
+  
+
+<table class="table text-light">
+  <thead>
+    <tr>
+      <th class="col-10">Categoria</th>
+      <th class="col-2"></th>
+    </tr>
+  </thead>
+  <tbody class="table-search">
+    <% @categories.each do |category| %>
+      <tr>
+        <td><%= category.category %></td>
+        <td>
+        <%= link_to edit_category_path(category), class: "me-5" do %>
+          <i class="bi bi-pencil"></i>
+	    	<% end %>
+        <%= link_to category_path(category), method: :delete do %>
+					<i class="bi bi-x-lg"></i>
+				<% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

@@ -1,26 +1,2 @@
 <h1>Upload de Videos</h1>
-
-<%= form_with model: @video do |f| %>
-  <div class="row ">
-    <div class="col-5 m-3 form-grou">
-      <%= f.label :url_do_video %>
-      <%= f.text_field :url_video, class: "form-control", placeholder: "URL" %>
-    </div>
-    <div class="col-5 m-3">
-      <%= f.label :Thumbnail %>
-      <%= f.text_field :thumb, class: "form-control", placeholder: "SRC" %>
-    </div>
-    <div class="col-5 m-3">
-      <%= f.label :Titulo %>
-      <%= f.text_field :titulo, class: "form-control", placeholder: "Titulo do video" %>
-    </div>
-    <div class="col-5 m-3">
-      <%= f.label :Descrição %>
-      <%= f.text_field :descricao, class: "form-control", placeholder: "Descrição do video" %>
-    </div>
-    <div class="col-5 offset-md-5">
-      <%= f.submit :Salvar, class: "btn btn-success mx-auto" %>
-    </div>
-  </div>
-  
-<% end %>
+<%= render "form" %>

@@ -105,3 +105,8 @@ a:hover {
 .list-group-item:hover {
   background-color: #69686873;
 }
+
+/*TABELA DE VIDEOS*/
+.image-thumb {
+  height: 100px;
+}

@@ -1,1 +1,33 @@
-mds tem que ser burro assim não
+<h1 class="title">Meu canal</h1>
+
+<table class="table text-light">
+  <thead>
+    <div class="col-md-12">
+	<th class="col-md-2">URl do video</th>
+	<th class="col-md-2">Thumb</th>
+      <th class="col-md-2">Titulo</th>
+      <th class="col-md-3">Descrição</th>
+      <th class="col-md-1">Categoria</th>
+      <th class="col-md-1"></th>
+    </div>
+  </thead>
+  <tbody class="table-search">
+		<% @videos.each do |video| %>
+		<tr>
+			<td><%= video.url_video.truncate(40) %></td>
+			<td><%= image_tag(video.thumb, class: "image-thumb") %></td>
+	    <td><%= video.titulo %></td>
+	    <td><%= video.descricao.truncate(60) %></td>
+	    <td><%= video.category.category %></td>
+	    <td>
+	    	<%= link_to edit_video_path(video), class: "me-5" do %>
+	     		<i class="bi bi-pencil"></i>
+	    	<% end %>
+	  		<%= link_to video_path(video), method: :delete do %>
+					<i class="bi bi-x-lg"></i>
+				<% end %>
+	    </td>   
+    </tr>
+		<% end %>
+  </tbody>
+</table>
